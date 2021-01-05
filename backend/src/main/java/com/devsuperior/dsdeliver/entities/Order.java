@@ -39,16 +39,13 @@ public class Order implements Serializable {
 		
 	}
 
-	public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status,
-			Set<Product> products) {
-		super();
+	public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
 		this.id = id;
 		this.address = address;
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.moment = moment;
 		this.status = status;
-		this.products = products;
 	}
 
 	public Long getId() {
